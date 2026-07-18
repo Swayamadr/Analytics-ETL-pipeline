@@ -15,7 +15,9 @@ Highlights robust backend data engineering capabilities optimized for analytical
 * **Medallion Architecture:** Refines operational streaming data through structured validation passes—moving from **Bronze** (append-only immutable raw landing) to **Silver** (cleaned, cast, and schema-enforced layers) and **Gold** (business-ready dimension layers).
 * **Slowly Changing Dimensions (SCD Type 2):** Natively manages time-variant historical traits using explicit transactional windows (`effective_start`, `effective_end`, `is_current`) to guarantee record traceability rather than destructively overwriting data.
 * **Point-in-Time (PIT) Correctness:** Enforces absolute relational database consistency when running queries across variable historical user state timestamps.
-
+* **ORM Schema Blueprints:** Modeled using clear **SQLAlchemy** declarative patterns mirroring a live production **PostgreSQL** schema configuration.
+* **Database Migrations Mindset:** Modeled cleanly to integrate with **Alembic** migration tracks for deterministic schema version sequencing control.
+* **Exact Financial Mathematics:** Zero native floats used; all data structures parsed via strict Python `Decimal` data allocations to completely bypass floating-point rounding deterioration risks.
 ---
 
 ##  Repository File Blueprint
