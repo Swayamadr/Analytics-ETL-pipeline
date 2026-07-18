@@ -10,7 +10,7 @@ This repository moves past simple data handling to showcase a rigorous, producti
 
 The system maps a single, high-competency data pipeline layout:
 
-### Project 3: Analytics ETL Pipeline (`src/analytics_etl.py`)
+###: Analytics ETL Pipeline (`src/analytics_etl.py`)
 Highlights robust backend data engineering capabilities optimized for analytical processing:
 * **Medallion Architecture:** Refines operational streaming data through structured validation passes—moving from **Bronze** (append-only immutable raw landing) to **Silver** (cleaned, cast, and schema-enforced layers) and **Gold** (business-ready dimension layers).
 * **Slowly Changing Dimensions (SCD Type 2):** Natively manages time-variant historical traits using explicit transactional windows (`effective_start`, `effective_end`, `is_current`) to guarantee record traceability rather than destructively overwriting data.
